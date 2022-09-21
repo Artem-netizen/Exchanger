@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One moment</title>
+    <link rel="shortcut icon" href="./image/icon/logo-icon.png">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!-- header -->
+            <header class="header" id="header">
+                <div class="container">
+                    <div class="header-wrapper">
+                        <a class="logo" href="index.html">
+                            <img src="./image/header/logo.svg" alt="One moment" aria-label="Логотип">
+                        </a>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="regulations.html" class="nav__link">
+                                        Правила обмена
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="partners.html" class="nav__link">
+                                        Партнерам
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="questions-answers.html" class="nav__link">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="contact.html" class="nav__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a class="btn-entrance" href="personal-area.html">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.3339 7.5L13.8339 10L11.3339 7.5ZM13.8339 10L11.3339 12.5L13.8339 10ZM13.8339 10H7.16728H13.8339ZM18.0006 10C18.0006 10.9849 17.8066 11.9602 17.4297 12.8701C17.0528 13.7801 16.5003 14.6069 15.8039 15.3033C15.1075 15.9997 14.2807 16.5522 13.3707 16.9291C12.4608 17.306 11.4855 17.5 10.5006 17.5C9.5157 17.5 8.54043 17.306 7.63048 16.9291C6.72054 16.5522 5.89375 15.9997 5.19731 15.3033C4.50087 14.6069 3.94842 13.7801 3.57151 12.8701C3.1946 11.9602 3.00061 10.9849 3.00061 10C3.00061 8.01088 3.79079 6.10322 5.19731 4.6967C6.60383 3.29018 8.51149 2.5 10.5006 2.5C12.4897 2.5 14.3974 3.29018 15.8039 4.6967C17.2104 6.10322 18.0006 8.01088 18.0006 10Z" stroke="#4EA3E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Войти
+                        </a>
+                        <!-- mobile menu -->
+                        <button class="btn-menu" type="button" aria-label="Открыть меню">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="menu">
+                            <button class="btn-menu-close" type="button" aria-label="Закрыть меню">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.89954 10.6066L19.0919 19.799L19.799 19.0919L10.6066 9.89954L19.7991 0.707107L19.092 0L9.89954 9.19243L0.707107 0L0 0.707107L9.19243 9.89954L8.27312e-05 19.0919L0.70719 19.799L9.89954 10.6066Z" fill="#ffffff"/>
+                                </svg>                                    
+                            </button>
+                            <div class="menu__inner">
+                                <div class="menu__nav">
+                                    <a class="menu-logo" href="index.html" aria-label="Логотип">
+                                        <img src="./image/header/logo.svg" alt="One moment">
+                                    </a>
+                                    <ul class="menu__list">
+                                        <li>
+                                            <a href="regulations.html">
+                                                Правила обмена
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="partners.html">
+                                                Партнерам
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="questions-answers.html">
+                                                FAQ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">
+                                                Контакты
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-login">
+                                    <a class="btn-entrance menu-login__btn" href="#">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.3339 7.5L13.8339 10L11.3339 7.5ZM13.8339 10L11.3339 12.5L13.8339 10ZM13.8339 10H7.16728H13.8339ZM18.0006 10C18.0006 10.9849 17.8066 11.9602 17.4297 12.8701C17.0528 13.7801 16.5003 14.6069 15.8039 15.3033C15.1075 15.9997 14.2807 16.5522 13.3707 16.9291C12.4608 17.306 11.4855 17.5 10.5006 17.5C9.5157 17.5 8.54043 17.306 7.63048 16.9291C6.72054 16.5522 5.89375 15.9997 5.19731 15.3033C4.50087 14.6069 3.94842 13.7801 3.57151 12.8701C3.1946 11.9602 3.00061 10.9849 3.00061 10C3.00061 8.01088 3.79079 6.10322 5.19731 4.6967C6.60383 3.29018 8.51149 2.5 10.5006 2.5C12.4897 2.5 14.3974 3.29018 15.8039 4.6967C17.2104 6.10322 18.0006 8.01088 18.0006 10Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Войти                           
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="header-description">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="header-content-right">
+                            <h1 class="header__title">
+                                Обменивай
+                                <span>
+                                    безопасно
+                                </span>
+                            </h1>
+                            <p class="header-content-desc">
+                                Главная задача которую мы ставим перед собой - быстрые и безопасные обмены для наших клиентов 24/7. Попробуйте наш сервис и ощутите все преимущества.
+                            </p>
+                            <p class="header-content-work">
+                                Работаем круглосуточно
+                            </p>
+                            <a class="header-content-participate button-primary" href="#">
+                                Учавствуй в конкурсе
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0423 7.5L8.54228 14.25M1.50061 7.5H15.0423H1.50061ZM15.0423 7.5L8.54228 0.75L15.0423 7.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </a>
+                        </div>
+                        <div class="header-content-img">
+                            <img src="./image/header/exchanger.png" alt="big image" aria-label="Изображение обменника">
+                        </div>
+                    </div>
+                </div>
+                <div class="header-content-bg-mobile">
+                    <img class="header-content-bg" src="./image/header/img.png" alt="background">
+                </div>
+            </section>
+            <section class="converter-section">
+                <div class="container">
+                    <form class="converter" action="#" method="post" autocomplete="on">
+                        <div class="converter__inner">
+                            <div class="converter-item converter-transfer">
+                                <button class="close" type="button" aria-label="Закрыть">
+                                    <img src="./image/icon/close.svg" alt="закрыть">
+                                </button>
+                                <div class="converter-transfer__item give">
+                                    <h2 class="converter-item__title">
+                                        Отдаете
+                                    </h2>
+                                    <div class="find-currency">
+                                        <input class="input-search" type="search" placeholder="Найти валюту" required>
+                                        <button class="btn-search" type="button">
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.3923 10.4583L17.3984 17.3975L10.3923 10.4583ZM1.57401 6.75959C1.56487 6.07287 1.69225 5.39118 1.94873 4.75408C2.20521 4.11699 2.58569 3.53719 3.06807 3.04834C3.55046 2.5595 4.12515 2.17135 4.75878 1.90642C5.39241 1.64149 6.07235 1.50507 6.75913 1.50507C7.44591 1.50507 8.12585 1.64149 8.75948 1.90642C9.39311 2.17135 9.9678 2.5595 10.4502 3.04834C10.9326 3.53719 11.3131 4.11699 11.5695 4.75408C11.826 5.39118 11.9534 6.07287 11.9443 6.75959C11.9261 8.12283 11.3719 9.42409 10.4014 10.3817C9.43101 11.3393 8.12249 11.8762 6.75913 11.8762C5.39577 11.8762 4.08726 11.3393 3.11683 10.3817C2.1464 9.42409 1.59213 8.12283 1.57401 6.75959V6.75959Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="converter-currency__wrap swiper">
+                                        <div class="converter-currency__inner swiper-wrapper">
+                                            <ul class="converter-currency__list swiper-slide">
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/sber.svg" alt="sber">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Сбербанк RUB
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/bitcoin.svg" alt="bitcoin">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Bitcoin
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/bitcoin.svg" alt="bitcoin">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Bitcoin (BEP20)
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/tether.svg" alt="tether">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Tether TRC20
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/tether.svg" alt="tether">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Tether TRC20
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="converter-currency__list swiper-slide">
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/sber.svg" alt="sber">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Сбербанк RUB
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/bitcoin.svg" alt="bitcoin">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Bitcoin
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/bitcoin.svg" alt="bitcoin">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Bitcoin (BEP20)
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/tether.svg" alt="tether">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Tether TRC20
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/tether.svg" alt="tether">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Tether TRC20
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="converter-transfer__item-navigation">
+                                            <button class="swiper-button-prev" type="button">
+                                                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.15714 1.68591L0.843018 6.00003L5.15714 10.3141" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <div class="swiper-pagination"></div>
+                                            <button class="swiper-button-next" type="button">
+                                                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.842925 10.3141L5.15704 5.99997L0.842926 1.68585" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="converter-transfer__item get">
+                                    <h2 class="converter-item__title">
+                                        Получаете
+                                    </h2>
+                                    <div class="find-currency">
+                                        <input class="input-search" type="search" placeholder="Найти валюту" required>
+                                        <button class="btn-search" type="button">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.3923 10.4583L17.3984 17.3975L10.3923 10.4583ZM1.57401 6.75959C1.56487 6.07287 1.69225 5.39118 1.94873 4.75408C2.20521 4.11699 2.58569 3.53719 3.06807 3.04834C3.55046 2.5595 4.12515 2.17135 4.75878 1.90642C5.39241 1.64149 6.07235 1.50507 6.75913 1.50507C7.44591 1.50507 8.12585 1.64149 8.75948 1.90642C9.39311 2.17135 9.9678 2.5595 10.4502 3.04834C10.9326 3.53719 11.3131 4.11699 11.5695 4.75408C11.826 5.39118 11.9534 6.07287 11.9443 6.75959C11.9261 8.12283 11.3719 9.42409 10.4014 10.3817C9.43101 11.3393 8.12249 11.8762 6.75913 11.8762C5.39577 11.8762 4.08726 11.3393 3.11683 10.3817C2.1464 9.42409 1.59213 8.12283 1.57401 6.75959V6.75959Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        </button>
+                                    </div>
+                                    <div class="converter-currency__wrap swiper">
+                                        <div class="converter-currency__inner swiper-wrapper">
+                                            <ul class="converter-currency__list swiper-slide">
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/bitcoin.svg" alt="bitcoin">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Bitcoin
+                                                        </p>
+                                                        <p class="converter-currency-card__number">
+                                                            54.14187108 BTC
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/bitcoin.svg" alt="bitcoin">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Bitcoin (BEP20)
+                                                        </p>
+                                                        <p class="converter-currency-card__number">
+                                                            54.76042674 BTC
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/tether.svg" alt="tether">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Tether TRC20
+                                                        </p>
+                                                        <p class="converter-currency-card__number">
+                                                            89338.52481265 USDT
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/tether.svg" alt="tether">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Tether BEP20
+                                                        </p>
+                                                        <p class="converter-currency-card__number">
+                                                            81484.2647 USDT
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/tether.svg" alt="tether">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Tether SOL
+                                                        </p>
+                                                        <p class="converter-currency-card__number">
+                                                            101908.95 USDT
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="converter-currency__list swiper-slide">
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/bitcoin.svg" alt="bitcoin">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Bitcoin
+                                                        </p>
+                                                        <p class="converter-currency-card__number">
+                                                            54.14187108 BTC
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/bitcoin.svg" alt="bitcoin">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Bitcoin (BEP20)
+                                                        </p>
+                                                        <p class="converter-currency-card__number">
+                                                            54.76042674 BTC
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/tether.svg" alt="tether">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Tether TRC20
+                                                        </p>
+                                                        <p class="converter-currency-card__number">
+                                                            89338.52481265 USDT
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/tether.svg" alt="tether">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Tether BEP20
+                                                        </p>
+                                                        <p class="converter-currency-card__number">
+                                                            81484.2647 USDT
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="converter-currency-card ">
+                                                    <div class="converter-currency-card__icon">
+                                                        <img src="./image/icon/tether.svg" alt="tether">
+                                                    </div>
+                                                    <div class="converter-currency-card__content">
+                                                        <p class="converter-currency-card__title">
+                                                            Tether SOL
+                                                        </p>
+                                                        <p class="converter-currency-card__number">
+                                                            101908.95 USDT
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="converter-transfer__item-navigation">
+                                            <button class="swiper-button-prev" type="button">
+                                                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.15714 1.68591L0.843018 6.00003L5.15714 10.3141" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <div class="swiper-pagination"></div>
+                                            <button class="swiper-button-next" type="button">
+                                                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.842925 10.3141L5.15704 5.99997L0.842926 1.68585" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="converter-item converter-exchange">
+                                <div class="converter-exchange-rate">
+                                    <h2 class="converter-item__title">
+                                        Обмен
+                                    </h2>
+                                    <div class="converter-exchange-rate-inner">
+                                        <p class="exchange-rate">
+                                            Курс обмена:
+                                            <span>
+                                                2175146.03 rub = 1 btc
+                                            </span>
+                                        </p>
+                                        <span class="countdown">
+                                            5
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="converter-exchange__wrap">
+                                    <div class="converter-exchange__item">
+                                        <h3 class="converter-exchange__subtitle">
+                                            Меняем 
+                                            <span>
+                                                Сбербанк RUB
+                                            </span>
+                                        </h3>
+                                        <div class="converter-exchange-column">
+                                            <div class="converter-input">
+                                                <input class="input" type="number" placeholder="Сумма" required>
+                                                <button class="icon open-btn open-give" type="button" aria-label="Выбрать валюту">
+                                                    <img src="./image/icon/sber.svg" alt="sber" aria-label="Сбербанк">   
+                                                </button>
+                                            </div>
+                                            <div class="converter-input">
+                                                <input class="input" type="text" placeholder="ФИО отправителя" required>
+                                            </div>
+                                            <div class="converter-input">
+                                                <input class="input" type="number" placeholder="Карта Сбербанка (от 16 до 18 цифр)" required>
+                                            </div>
+                                            <div class="converter-input">
+                                                <input class="input" type="email" placeholder="Email" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="converter-exchange__item">
+                                        <h3 class="converter-exchange__subtitle">
+                                            На 
+                                            <span>
+                                                Bitcoin (BEP20)
+                                            </span>
+                                        </h3>
+                                        <div class="converter-exchange-column">
+                                            <div class="converter-input">
+                                                <input class="input" type="number" placeholder="Сумма" required>
+                                                <button class="icon open-btn open-get" type="button" aria-label="Выбрать валюту">
+                                                    <img src="./image/icon/bitcoin.svg" alt="bitcoin" aria-label="Биткоин">
+                                                </button>
+                                            </div>
+                                            <div class="converter-input">
+                                                <input class="input" type="text" placeholder="Bitcoin BEP20 кошелек" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="converter-policy">
+                                    <p class="converter-policy__text">
+                                        Нажимая на кнопку "Перейти к оплате", я соглашаюсь с
+                                        <a href="#">
+                                            правилами обмена.
+                                        </a>
+                                    </p>
+                                    <a class="btn btn-width" href="#">
+                                        Перейти к оплате
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+         <!-- footer -->
+         <footer class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-right">
+                        <div class="copyright">
+                            <img src="./image/icon/logo-small.svg" alt="logo" aria-label="маленький логотип">
+                            <p class="copyright-desc">
+                                &#169; 2020 OneMoment.cc Все права защищены.
+                            </p>
+                        </div>
+                        <div class="footer-partners">
+                            <a class="footer-partners-link" href="#">
+                                <img src="./image/footer/change.png" alt="best change" aria-label="Партнер best change">
+                            </a>
+                            <a class="footer-partners-link" href="#">
+                                <img src="./image/footer/sumochange.png" alt="sumochange" aria-label="Партнер sumochange">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-left">
+                        <a class="policy" href="#">
+                            Политика конфиденциальности
+                        </a>
+                        <div class="footer-social">
+                            <a class="footer-network" href="#" target="_blank" aria-label="перейти в телеграм">
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.9158 2.13435L27.1613 26.4801C27.1026 27.0668 26.7506 27.5948 26.2226 27.8881C25.9293 28.0054 25.636 28.1227 25.284 28.1227C25.0493 28.1227 24.8147 28.0641 24.58 27.9467L17.4229 24.9549L14.4311 29.4134C14.1964 29.824 13.7857 30 13.3751 30C12.7298 30 12.2018 29.472 12.2018 28.8267V23.1949C12.2018 22.7256 12.3191 22.3149 12.5538 22.0216L25.3427 5.59555L8.09529 21.1417L2.05284 18.6191C1.40753 18.3258 0.938214 17.7391 0.938214 16.9765C0.879549 16.1552 1.23154 15.5685 1.87685 15.2165L28.1586 0.257081C28.7452 -0.0949064 29.5665 -0.0949064 30.1532 0.315745C30.7398 0.726397 31.0331 1.43037 30.9158 2.13435Z" fill="#4EA3E4"/>
+                                </svg>                                
+                            </a>
+                            <a class="footer-network" href="#" target="_blank" aria-label="перейти во вконтакте">
+                                <svg width="43" height="25" viewBox="0 0 43 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M42.1038 1.71875C42.3381 0.78125 42.1038 0 40.6975 0H36.0881C34.9163 0 34.3694 0.625 34.0569 1.32812C34.0569 1.32812 31.7131 7.03125 28.4319 10.7812C27.3381 11.7969 26.8694 12.1875 26.2444 12.1875C26.01 12.1875 25.5413 11.7969 25.5413 10.8594V1.71875C25.5413 0.546875 25.2288 0 24.2131 0H17.0256C16.2444 0 15.8538 0.546875 15.8538 1.09375C15.8538 2.1875 17.4944 2.42188 17.6506 5.54688V12.3438C17.6506 13.8281 17.4163 14.1406 16.7913 14.1406C15.2288 14.1406 11.4788 8.35938 9.21313 1.79688C8.74438 0.546875 8.27563 0 7.10376 0H2.49438C1.24438 0 0.931885 0.625 0.931885 1.32812C0.931885 2.57812 2.49438 8.59375 8.19751 16.6406C12.0256 22.1094 17.4163 25 22.26 25C25.1506 25 25.5413 24.375 25.5413 23.2812C25.5413 18.0469 25.3069 17.5 26.7131 17.5C27.4163 17.5 28.5881 17.8906 31.3225 20.5469C34.4475 23.6719 34.9944 25 36.7131 25H41.3225C42.6506 25 43.2756 24.375 42.885 23.0469C42.0256 20.3906 36.1663 14.7656 35.8538 14.375C35.1506 13.5156 35.385 13.125 35.8538 12.3438C35.8538 12.3438 41.4788 4.375 42.1038 1.71875Z" fill="#4EA3E4"/>
+                                </svg>                               
+                            </a>
+                        </div>
+                    </div>
+                    <div class="copyright copyright-mobile">
+                        <img src="./image/icon/logo-small.svg" alt="logo" aria-label="маленький логотип">
+                        <p class="copyright-desc">
+                            &#169; 2020 OneMoment.cc Все права защищены.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- scripts -->
+    <script src="./js/carousel.js"></script>
+    <script src="./js/choose.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+.users {
+    padding-bottom: 120px;
+    
+    &__title {
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 570px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &-specify {
+        width: 100%;
+        padding: 15px 30px;
+        border-radius: 2px;
+        background: $light-grey; 
+        &__desc {
+            a {
+                display: inline-block;
+                color: $blue;
+            }
+        }
+    }
+
+    @media screen and (max-width: 570px) {
+        padding-bottom: 80px;
+    }
+}
+
+.referral {
+    &__subtitle {
+        margin-bottom: 60px;
+    }
+
+    &__wrap {
+        margin-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 40px;
+            align-items: start;
+            flex-direction: column;
+        }
+    }
+    
+    &-statistic {
+        width: 50%;
+        position: relative;
+        border-left: 1px solid #CFCFCF;
+        &-fuildset {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @media screen and (max-width: 570px) {
+                margin-bottom: 20px;
+                align-items: start;
+                flex-direction: column-reverse;
+            }
+        }
+
+        &-item {
+            position: relative;
+            padding: 15px 30px;
+            max-width: 440px;
+            width: 100%;
+            z-index: 0;
+            color: $white;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 30px;
+            background: $light-grey;
+            border-radius: 0px 2px 2px 0px;
+            -webkit-border-radius: 0px 2px 2px 0px;
+            -moz-border-radius: 0px 2px 2px 0px;
+            -ms-border-radius: 0px 2px 2px 0px;
+            -o-border-radius: 0px 2px 2px 0px;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                height: 100%;
+                border-radius: 0px 50px 50px 0px;
+            }
+            &.first {
+                &::before {
+                    width: 45%;
+                    background: linear-gradient(90deg, #4EA3E4 0%, #2A609F 100%);
+                }
+            }
+            &.second {
+                &::before {
+                    width: 66%;
+                    background: linear-gradient(90deg, #31E042 0%, #23AA30 100%);
+                }
+            }
+            &.third {
+                &::before {
+                    width: 89%;
+                    background: linear-gradient(90deg, #E84545 0%, #B73737 100%);
+                }
+            }
+
+            @media screen and (max-width: 1024px) {
+                max-width: 690px;
+            }
+        }
+
+        &-desc {
+            padding-left: 40px;
+            width: 40%;
+            text-align: left;
+
+            @media screen and (max-width: 1024px) {
+                padding-left: 30px;
+                width: 30%;
+            }
+
+            @media screen and (max-width: 570px) {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 40px;
+            width: 100%;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -1px;
+                width: 1px;
+                height: 30px;
+                background: $white;
+            }
+        }
+    }
+
+    &-desc {
+        width: 43%;
+
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+}
+
+// monitorings
+.monitorings {
+    padding-bottom: 120px;
+
+    &-text {
+        margin-bottom: 40px;
+        span {
+            color: $blue;
+        }
+    }
+
+    &-item {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+        &-subtext {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 570px) {
+        padding-bottom: 80px;
+    }
+}

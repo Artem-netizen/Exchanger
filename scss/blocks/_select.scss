@@ -1,0 +1,155 @@
+.select {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 13px 20px 13px 60px;
+    background: $white;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+    &-btn {
+        &-choose {
+
+            &.icon {
+                pointer-events: none;
+                display: none;
+
+                @media screen and (max-width: 480px) {
+                    display: flex;
+                }
+            }
+
+        }
+    }
+
+    &__list {
+        padding: 20px;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        z-index: 5;
+        width: 100%;
+        opacity: 0;
+        transition: .3s;
+        pointer-events: none;
+        max-height: 150px;
+        overflow-y: auto;
+        background: $white;
+        border-radius: 0 5px 5px 0;
+        -webkit-border-radius: 0 5px 5px 0;
+        -moz-border-radius: 0 5px 5px 0;
+        -ms-border-radius: 0 5px 5px 0;
+        -o-border-radius: 0 5px 5px 0;
+        box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.1);
+
+        &.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $bg-gradient;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        background: $light-grey;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+            background: $blue;
+            span {
+                color: $white;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &-img {
+        margin-right: 15px;
+        max-width: 24px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__input-hidden {
+        display: none;
+    }
+
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 15px 20px;
+    }
+}
+
+.arrow-down-icon {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    display: flex;
+     align-items: center;
+
+    span {
+        pointer-events: none;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -40px;
+        width: 24px;
+        height: 24px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../image/icon/sber.svg');
+
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 13px;
+        right: 0px;
+        width: 17px;
+        height: 10px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../image/icon/further.svg');
+
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+    }
+}

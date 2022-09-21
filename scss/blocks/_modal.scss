@@ -1,0 +1,286 @@
+.modal {
+    margin: 0 auto;
+    padding: 0 22px 120px;
+    max-width: 920px;
+    width: 100%;
+
+    &-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &-form {
+        padding: 60px;
+        position: relative;
+        overflow-x: auto;
+        background: $white;
+        box-shadow: 0px 20px 80px rgba(78, 163, 228, 0.2);
+
+        @media screen and (max-width: 570px) {
+            padding: 30px;
+        }
+    }
+
+    &-close {
+        max-width: 30px;
+        width: 100%;
+        img {
+            height: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 570px) {
+            top: 30px;
+            right: 30px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 570px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 480px) {
+            span {
+                display: none;
+            }
+        }
+    }
+
+    &__list-inputs {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-input {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-desc {
+            margin-bottom: 10px;
+            display: block;
+            color: $dark-blue;
+            line-height: 20px;
+            font-weight: 700;
+            font-size: 14px;
+
+            @media screen and (max-width: 570px) {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+           margin-bottom: 20px;
+        }
+    }
+
+    &-label {
+        position: relative;
+
+        &.icon {
+            &::before {
+                background-image: url('../image/icon/eye.svg');
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 32px;
+            width: 32px;
+            height: 23px;
+            cursor: pointer;
+            background-color: $white;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+
+            @media screen and (max-width: 570px) {
+                right: 22px;
+            }
+        }
+    }
+
+    &-terms {
+        margin-bottom: 30px;
+
+        li {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            p {
+                color: $grey;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+        }
+
+        &__img {
+            margin-right: 10px;
+            max-width: 20px;
+            width: 100%;
+        }
+    }
+
+    &-policy {
+        position: relative;
+    
+        &-label {
+            padding-left: 45px;
+            padding-top: 5px;
+            display: block;
+            color: $dark-blue;
+            line-height: 20px;
+            font-weight: 400;
+            font-size: 18px;
+            cursor: pointer;
+            a {
+                color: $blue;
+                text-decoration: underline;
+            }
+    
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30px;
+                height: 30px;
+                display: block;
+                background: $white;
+                border-radius: 5px;
+                border: 1px solid #CFCFCF;
+                box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                z-index: 1;
+                opacity: 0;
+                width: 16px;
+                height: 11px;
+                display: block;
+                background-size: 16px 11px; 
+                background-repeat: no-repeat;
+                background-image: url('../image/icon/check.svg');
+            }
+
+            &:hover {
+                a {
+                    text-decoration: none;
+                }
+            }
+            @media screen and (max-width: 570px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 480px) {
+                padding-top: 0;
+            }
+        }
+    }
+
+    &-support {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 480px) {
+            align-items: start;
+            flex-direction: column;
+        }
+    }
+
+    &-submit {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    &-outer {
+        margin-top: 30px;
+        line-height: 20px;
+        text-align: center;
+        
+        a {
+            display: inline-block;
+            color: $blue;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-forget {
+        display: inline-block;
+        color: $blue;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 480px)  {
+            margin-top: 30px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 570px) {
+        padding-bottom: 80px;
+    }
+}
+
+.input-primary {
+    width: 100%;
+    padding: 20px 30px;
+    background: $white;
+    color: $grey;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #CFCFCF;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 570px) {
+        padding: 15px 60px 15px 20px;
+    }
+}
+
+.checkbox {
+    position: absolute;
+    appearance: none;
+
+    &:checked + .modal-policy-label::before {
+        opacity: 1;
+    }
+}

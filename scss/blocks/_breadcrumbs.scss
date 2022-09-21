@@ -1,0 +1,34 @@
+.breadcrumbs {
+    margin-bottom: 80px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        li {
+            &.partition {
+                margin: 0 15px;
+
+                @media screen and (max-width: 570px) {
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+    &__link {
+        display: inline-block;
+        line-height: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        color: $blue;
+        &.current {
+            color: $grey;
+        }
+        @media screen and (max-width: 570px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    @media screen and (max-width: 570px) {
+        margin-bottom: 60px;
+    }
+}
